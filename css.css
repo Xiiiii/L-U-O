@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+  }
+  @font-face {
+    font-family: 'My Custom Font';
+    src: url('Digitany.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    font-family: 'My Custom Font', Arial, sans-serif;
+    color: white;
+
+  }
+  h1, h4 {
+    position: absolute;
+  }
+  h1 {
+    bottom: 50px;
+    right: 375px;
+  }
+  
+  h4 {
+    bottom: 0px; 
+    right: 300px;
+  }
+  html {
+    width: 100vh;
+    background-color: black;
+  }
+  body{
+    width: 90%;
+  }
+  .image {
+    position: absolute;
+    max-width: 200px; /* 规定最大宽度 */
+    max-height: 200px; /* 规定最大高度 */
+    box-sizing: border-box;
+    transform-origin: center center;
+    transition: all 3s ease-in-out;
+    z-index: 1; /*  初始化z-index值为1  */ 
+  }
+
+  #image1 {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+  }
+
+  #image2 {
+    position: absolute;
+    top: 0%;
+    left: 48%;
+  }
+
+  #image3 {
+    position: absolute;
+    top: 23%;
+    left: 64%;
+  }
+
+  #image4 {
+    position: absolute;
+    top: 3%;
+    left: 83%;
+  }
+
+  #image5 {
+    position: absolute;
+    top: 47%;
+    left: 80%;
+  }
+
+  #image6 {
+    position: absolute;
+    top: 41%;
+    left: 8%;
+  }
+
+  #image7 {
+    position: absolute;
+    top: 56%;
+    left: 54%;
+  }
+
+  #image8 {
+    position: absolute;
+    top: 61%;
+    left: 27%;
+  }
+
+  #image9 {
+    position: absolute;
+    top: 21%;
+    left: 1%;
+  }
+
+  #image10 {
+    position: absolute;
+    top: 14%;
+    left: 38%;
+  }
+
+  #image11 {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+  }
