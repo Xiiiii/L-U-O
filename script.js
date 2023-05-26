@@ -1,14 +1,12 @@
-let elements = document.querySelectorAll('image-container')
-  
-for (let element of elements) {
-  element.style.top = random() + "px";
-  element.style.left = random() + "px";
-}
 function random(){
   return Math.floor(Math.random() * 60 - 30)
 }
 var images = document.querySelectorAll('.image');
+console.log(images)
+
 		for (var i = 0; i < images.length; i++) {
+        images[i].style.top = random() + "px";
+        images[i].style.left = random() + "px";
 		    images[i].addEventListener('mouseover', function(e) {
 		        var image = e.target;
 		        image.style.transform = 'scale(1.5)';
