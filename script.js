@@ -1,4 +1,4 @@
-let elements = document.querySelectorAll('iimage-container')
+let elements = document.querySelectorAll('image-container')
   
 for (let element of elements) {
   element.style.top = random() + "px";
