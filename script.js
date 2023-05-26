@@ -4,10 +4,10 @@ for (let element of elements) {
   element.style.top = random() + "px";
   element.style.left = random() + "px";
 }
-
 function random(){
   return Math.floor(Math.random() * 60 - 30)
-}images = document.querySelectorAll('.image');
+}
+var images = document.querySelectorAll('.image');
 		for (var i = 0; i < images.length; i++) {
 		    images[i].addEventListener('mouseover', function(e) {
 		        var image = e.target;
