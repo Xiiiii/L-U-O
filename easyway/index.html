@@ -1,49 +1,160 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8" />
-	<title>Easy Way</title>
-</head>
-	<body>
-		<h1>Easy Way</h1>
-		<h4>2021
-		  <br>
-		  <p>A taxi app designed for the elderly. Removing the cumbersome interface design and returning to the simplest and simplest functions to achieve high recognition, the highlights of this software are clear navigation, payment and diversified calling methods.
-          </p>
- <style>
- body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-  }
-  @font-face {
-    font-family: 'My Custom Font';
-    src: url('Digitany.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  body {
-    font-family: 'My Custom Font', Arial, sans-serif;
-    color: rgb(0, 0, 0);
+    <head>
+        <meta charset="UTF-8" />
+      <title>Easy Way</title>
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+        font-size: 12pt;
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-family: "My Custom Font";
+    }
+    body {
+        background-color: rgb(0, 0, 0);
+        width:100%;
+        height: 100%;
+        font-size: 18pt ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    article{font-size: 18pt}
+    h3 {
+        font-size: 70px;
+        color: rgb(255, 255, 255);
+        font-family: "My Custom Font";
+        width: 30%;}
+    h4 {
+        font-size: 48px;
+        color: rgb(255, 255, 255);
+        font-family: "My Custom Font";
+        width: 10%;
+    }
+    @font-face {
+        font-family: 'My Custom Font';
+        src: url('../Digitany.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;}
+    p {  
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        width: 60%;
+        font-family: "My Custom Font 2";
+      }
+      @font-face {
+        font-family: 'My Custom Font 2';
+        src: url('../Baskerville.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+        .fixed-content {
+        width: 100%;
+          position: fixed;
+          background-color: #000;
+          padding: 10px;
+          z-index: 99999; 
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        h3:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}h4:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}p:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}
+        .fixed-image {
+          position: fixed;
+          left: 50%;
+   	 top: 50%;
+   	 transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        video{
+            max-width: 100%;
+        }
+        .oneline_video{
+            display: flex;
+            flex-direction: row;
+        }
+        .oneline_img{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .bottom_menu{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .bac_IMG{
+            /* width: 100%; */
+            height: 100%;
+        }
+        .show_hide{
+            display: none;
+        }
+      </style>
+      </head>
+    <body>
+        <div class="fixed-content">
+            <a href="../index.html" id="back">HOME</a>
+            <a style="margin-right: 20px;" href="../index.html" id="back">LUO </a>
+ </div>
+        <br>
+       <div style="width: 100%;height: 100%;"></div>
 
-  }
-  h1, h4 {
-    position: absolute;
-  }
-  h1 {
-    bottom: 50px;
-    right: 375px;
-  }
+        <img id="bacImgshow" class="bac_IMG fixed-image" src="../55.png"/>
+        <br>
+            <h3 id="title_text" style="margin-left: 20px;">Easy Way </h3><br>
+            <h4 style="margin-left: 20px;">2022</h4><br>
+            <p style="margin-left: 20px;">
+                UI Design<br><br>
+                A taxi-hailing app designed for the elderly.
+               The cumbersome interface design is removed, and the most important simple functions are returned to achieve high recognition.
+               The highlight of this software is the clear navigation and payment and the diversification of calling methods.
+                </p>
+            <br>
+            <br> <br>
+            <video  src="G3_Annie Laura Lareina Dannie.mp4" style="margin: 0 auto;display: block;"controls="controls" alt="walk"loop muted autoplay playsinline></video>
+            <br> <br>
+            <div class="oneline_img">
+            <img style="height: 530px;background-color: #fff;" src="张珞_设计实习作品集-13.png"/><br>
+          <img  style="height: 530px;background-color: #fff;" src="张珞_设计实习作品集-14.png"/>
+        </div>
+        <br>
+        <div class="bottom_menu">
+          <a href="../flankton/index.html" id="back">     </a>
+            <a href="../flankton/index.html" id="back">NEXT</a>
+        </div>
   
-  h4 {
-    bottom: 0px; 
-    right: 300px;
-  }
-  html {
-    width: 100vh;
-    background-color: rgb(255, 255, 255);
-  }
-  body{
-    width: 90%;
-  }
-</style>
+  </body>
+  <script>
+    (function(){
+        let bacimg = document.getElementById('bacImgshow')
+        let title_text = document.getElementById('title_text')
+        console.log(title_text.style);
+        // document.addEventListener("scroll",(e)=>{
+        //    let _ = document.documentElement.scrollTop
+        //    console.log(_);
+        //    if(_>40){
+        //     bacimg.classList.remove('show_hide')
+        //    }
+        //    if(_<40){
+        //     bacimg.classList.add('show_hide')
+        //    }
+        // })
+    })()
+  </script>
+ 
+</html>

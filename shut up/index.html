@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+      <title>Shut Up!</title>
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+        font-size: 12pt;
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-family: "My Custom Font";
+    }
+    body {
+        background-color: rgb(0, 0, 0);
+        width:100%;
+        height: 100%;
+        font-size: 18pt ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    article{font-size: 18pt}
+    h3 {
+        font-size: 70px;
+        color: rgb(255, 255, 255);
+        font-family: "My Custom Font";
+        width: 30%;}
+    h4 {
+        font-size: 48px;
+        color: rgb(255, 255, 255);
+        font-family: "My Custom Font";
+        width: 10%;
+    }
+    @font-face {
+        font-family: 'My Custom Font';
+        src: url('../Digitany.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;}
+    p {  
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        width: 60%;
+        font-family: "My Custom Font 2";
+      }
+      @font-face {
+        font-family: 'My Custom Font 2';
+        src: url('../Baskerville.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+        .fixed-content {
+        width: 100%;
+          position: fixed;
+          background-color: #000;
+          padding: 10px;
+          z-index: 99999; 
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        h3:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}h4:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}p:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}
+        .fixed-image {
+          position: fixed;
+          left: 50%;
+   	 top: 50%;
+   	 transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        video{
+            max-width: 97%;
+        }
+        .oneline_video{
+            display: flex;
+            flex-direction: row;
+        }
+        .oneline_img{
+            display: flex;
+            flex-direction: row;
+        }
+        .bottom_menu{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .bac_IMG{
+            /* width: 100%; */
+            height: 100%;
+        }
+        .show_hide{
+            display: none;
+        }
+      </style>
+      </head>
+    <body>
+        <div class="fixed-content">
+            <a href="../index.html" id="back">HOME</a>
+            <a style="margin-right: 20px;" href="../index.html" id="back">LUO </a>
+ </div>
+        <br>
+       <div style="width: 100%;height: 100%;"></div>
+
+        <img id="bacImgshow" class="bac_IMG fixed-image" src="../web-10.png"/>
+        <br>
+            <h3 id="title_text" style="margin-left: 20px;">Shut Up! </h3><br>
+            <h4 style="margin-left: 20px;">2023</h4><br>
+            <p style="margin-left: 20px;">
+                Video<br><br>
+                'Anyone who wants to disturb my utopia, I will shoot up.'
+                <br>A film that satirizes some social phenomena. Examples include the transfer of heavy industry to neighboring provinces in order not to pollute the capital and unfair internet censorship and gag guidelines.
+                <br>Easter egg analysis: The doll of Jia Zong (Sina Weibo) on the table has been staring at the protagonist, and the Pooh stickers on the wall and the ruler placed on the wall indicate that all her actions in this environment cannot escape the review. The black headgear of the man in black is Kuromi, an evil force from overseas. The small colored pistols fit well with the protagonist's style, and killing Kuromi the Man in Black with a toy pistol gives it a comically grotesque feel. </p>
+             </p>
+            <br>
+            <br> <br>
+            <iframe src="//player.bilibili.com/player.html?aid=487090512&bvid=BV1QN411r77x&cid=1156835556&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+            <br>
+        <div class="bottom_menu">
+            <a href="../index.html" id="   ">   </a>
+            <a href="../suanming/index.html" id="back">NEXT</a>
+        </div>
+  
+  </body>
+  <script>
+    (function(){
+        let bacimg = document.getElementById('bacImgshow')
+        let title_text = document.getElementById('title_text')
+        console.log(title_text.style);
+        // document.addEventListener("scroll",(e)=>{
+        //    let _ = document.documentElement.scrollTop
+        //    console.log(_);
+        //    if(_>40){
+        //     bacimg.classList.remove('show_hide')
+        //    }
+        //    if(_<40){
+        //     bacimg.classList.add('show_hide')
+        //    }
+        // })
+    })()
+  </script>
+ 
+</html>

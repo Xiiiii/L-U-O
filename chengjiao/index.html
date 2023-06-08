@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+      <title>Edge Walker Music Festival</title>
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+        font-size: 12pt;
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-family: "My Custom Font";
+    }
+    body {
+        background-color: rgb(0, 0, 0);
+        width:100%;
+        height: 100%;
+        font-size: 18pt ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    article{font-size: 18pt}
+    h3 {
+        font-size: 70px;
+        color: rgb(255, 255, 255);
+        font-family: "My Custom Font";
+        width: 80%;}
+    h4 {
+        font-size: 48px;
+        color: rgb(255, 255, 255);
+        font-family: "My Custom Font";
+        width: 10%;
+    }
+    @font-face {
+        font-family: 'My Custom Font';
+        src: url('../Digitany.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;}
+    p {  
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        width: 60%;
+        font-family: "My Custom Font 2";
+      }
+      @font-face {
+        font-family: 'My Custom Font 2';
+        src: url('../Baskerville.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+        .fixed-content {
+        width: 100%;
+          position: fixed;
+          background-color: #000;
+          padding: 10px;
+          z-index: 99999; 
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        h3:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}h4:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}p:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}
+        .fixed-image {
+          position: fixed;
+          left: 50%;
+   	 top: 50%;
+   	 transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        video{
+            max-width: 100%;
+        }
+        .oneline_video{
+            display: flex;
+            flex-direction: row;
+        }
+        .oneline_img{
+            display: flex;
+            flex-direction: row;
+        }
+        .bottom_menu{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .bac_IMG{
+            /* width: 100%; */
+            height: 100%;
+        }
+        .show_hide{
+            display: none;
+        }
+      </style>
+      </head>
+    <body>
+        <div class="fixed-content">
+            <a href="../index.html" id="back">HOME</a>
+            <a style="margin-right: 20px;" href="../index.html" id="back">LUO </a>
+ </div>
+        <br>
+       <div style="width: 100%;height: 100%;"></div>
+
+        <img id="bacImgshow" class="bac_IMG fixed-image" src="张珞_设计实习作品集-18.png"/>
+        <br>
+            <h3 id="title_text" style="margin-left: 20px;">Edge Walker Music Festival </h3><br>
+            <h4 style="margin-left: 20px;">2022</h4><br>
+            <p style="margin-left: 20px;">
+                Branding,Motion,Video,Interactive<br><br>
+                Someone once said that before entering society, everyone is three-pointed and octagonal, but after entering society, everyone is rounded by life. The Orange Corner project wants to inspire uncompromising passion and vitality in young people's lives, recalling their original intentions and persistence. The exhibition is a comprehensive experience space, where the audience can experience game IP, video and interactive installations, and feel the unique charm.
+                The orange in the orange angle represents vitality. When it is linked with the angle, the drill bit corresponding to the angle is often associated with an orange-yellow engineering sense, reflecting a kind of energy. Edges are edge boundaries in Yingyuan culture, and young people are encouraged to step out of their boundaries and show their edges.
+                The site of the project, Guangfulin Site, is located on the north side of Guangfulin Village, Songjiang District, Shanghai, on the east bank of Chenshantang. The site can be divided into three cultural layers from top to bottom: the upper layer belongs to the Wuyue Culture of the Spring and Autumn and Warring States Periods, the middle layer is the follow-up of the Liangzhu Culture, and the lower layer belongs to the Guangfulin Culture of the Neolithic Age. In the exhibition, the game "Xiaolu Run" is combined with the changes of Shanghai, a pioneering city that encourages inclusiveness. Become prickly, make friends and find yourself. The video "A process in which a dot changes when stimulated" also tells this story through the language of geometric flatness.
+                It is hoped that the Orange Horn Project can launch an appeal so that young people no longer need to hide their "horns" and don't have to care about the eyes of others. Young people with horns can release their inner selves to their heart's content and call back their souls and vitality. A shelter for horny youth.
+            </p>
+            <br>
+            <br> <br>
+            <video  src="video.mp4" style="margin: 0 auto;display: block;"controls="controls" alt="walk"loop muted autoplay playsinline></video>
+            <br> <br>
+            <div class="oneline_video">
+                <video src="poster.mp4" style="height: 300px;width: 50%;"controls="controls" alt="walk"loop muted autoplay playsinline></video>
+            <video src="interactive.mp4" style="height: 300px;width: 50%;margin-right: 20px;"controls="controls" alt="walk"loop muted autoplay playsinline></video>
+            <video src="v.mp4" style="height: 300px;margin-right: 60px;"controls="controls" alt="walk"loop muted autoplay playsinline></video>
+            </div>
+            <br> <br>
+            <div class="oneline_img">
+            <img style="height: 500px;background-color: #fff;" src="张珞_设计实习作品集-20.png"/><br>
+          <img  style="height: 500px;background-color: #fff;" src="张珞_设计实习作品集-21.png"/>
+        </div>
+        <br>
+        <div class="bottom_menu">
+            <a href="../index.html" id="back">RESERVE</a>
+            <a href="../easyway/index.html" id="back">NEXT</a>
+        </div>
+  
+  </body>
+  <script>
+    (function(){
+        let bacimg = document.getElementById('bacImgshow')
+        let title_text = document.getElementById('title_text')
+        console.log(title_text.style);
+        // document.addEventListener("scroll",(e)=>{
+        //    let _ = document.documentElement.scrollTop
+        //    console.log(_);
+        //    if(_>40){
+        //     bacimg.classList.remove('show_hide')
+        //    }
+        //    if(_<40){
+        //     bacimg.classList.add('show_hide')
+        //    }
+        // })
+    })()
+  </script>
+ 
+</html>

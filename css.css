@@ -1,110 +1,211 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(0, 0, 0);
-  }
-  @font-face {
-    font-family: 'My Custom Font';
-    src: url('Digitany.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  body {
-    font-family: 'My Custom Font', Arial, sans-serif;
-    color: white;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(0, 0, 0);
+}
 
-  }
-  h1, h4 {
-    position: absolute;
-  }
-  h1 {
-    bottom: 50px;
-    right: 375px;
-  }
-  
-  h4 {
-    bottom: 0px; 
-    right: 300px;
-  }
-  html {
-    width: 100vh;
-    background-color: black;
-  }
-  body{
-    width: 90%;
-  }
-  .image {
-    position: absolute;
-    max-width: 200px; 
-    max-height: 200px; 
-    box-sizing: border-box;
-    transform-origin: center center;
-    transition: all 3s ease-in-out;
-    z-index: 1; 
-  }
+@font-face {
+	font-family: 'My Custom Font';
+	src: url('Digitany.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
-  #image1 {
-    position: absolute;
-    top: 0%;
-    left: 10%;
-  }
+body {
+	font-family: 'My Custom Font', Arial, sans-serif;
+	color: white;
+	
 
-  #image2 {
-    position: absolute;
-    top: 0%;
-    left: 48%;
-  }
+}
 
-  #image3 {
-    position: absolute;
-    top: 23%;
-    left: 64%;
-  }
+h1,
+h4 {
+	position: absolute;
+	z-index: 999;
+}
 
-  #image4 {
-    position: absolute;
-    top: 3%;
-    left: 83%;
-  }
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(0, 0, 0);
+}
 
-  #image5 {
-    position: absolute;
-    top: 47%;
-    left: 80%;
-  }
+@font-face {
+	font-family: 'My Custom Font';
+	src: url('Digitany.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
-  #image6 {
-    position: absolute;
-    top: 41%;
-    left: 8%;
-  }
+body {
+	font-family: 'My Custom Font', Arial, sans-serif;
+	color: white;
 
-  #image7 {
-    position: absolute;
-    top: 56%;
-    left: 54%;
-  }
+}
 
-  #image8 {
-    position: absolute;
-    top: 61%;
-    left: 27%;
-  }
+h1,
+h4 {
+	position: absolute;
+}
 
-  #image9 {
-    position: absolute;
-    top: 21%;
-    left: 1%;
-  }
+h1 {
+	bottom: 50px;
+	right: 275px;
+}
 
-  #image10 {
-    position: absolute;
-    top: 14%;
-    left: 38%;
-  }
+h4 {
+	bottom: 0px;
+	right: 188px;
+}
 
-  #image11 {
-    position: absolute;
-    top: 40%;
-    left: 24%;
-  }
+html {
+	width: 100vh;
+	background-color: black;
+}
+
+body {
+	width: 90%;
+}
+
+#div1 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 3%;
+	left: 10%;
+}
+
+#div2 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 5%;
+	left: 48%;
+}
+
+#div3 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 23%;
+	left: 64%;
+}
+
+#div4 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 6%;
+	left: 83%;
+}
+
+#div5 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 47%;
+	left: 80%;
+}
+
+#div6 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 41%;
+	left: 8%;
+}
+
+#div7 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 56%;
+	left: 54%;
+}
+
+#div8 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 61%;
+	left: 27%;
+}
+
+#div9 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 21%;
+	left: 1%;
+}
+
+#div10 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 14%;
+	left: 38%;
+}
+
+#div11 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 40%;
+	left: 24%;
+}
+
+.Div1:hover {
+	position: absolute;
+	transform: scale(1.5) translate(-10%, -10%);
+}
+.Div2:hover {
+	position: absolute;
+	transform: scale(1.5) translate(10%, 10%);
+}
+.Div3:hover {
+	position: absolute;
+	transform: scale(1.5) translate(-10%, -10%);
+}
+.Div4:hover {
+	position: absolute;
+	transform: scale(1.5) translate(10%, 10%);
+}
+.Div5:hover {
+	position: absolute;
+	transform: scale(1.5) translate(-10%, -10%);
+}
+.Div6:hover {
+	position: absolute;
+	transform: scale(1.5) translate(10%, 10%);
+}
+.Div7:hover {
+	position: absolute;
+	transform: scale(1.5) translate(-10%, -10%);
+}
+.Div8:hover {
+	position: absolute;
+	transform: scale(1.5) translate(10%, 10%);
+}
+.Div9:hover {
+	position: absolute;
+	transform: scale(1.5) translate(-10%, -10%);
+}
+.Div10:hover {
+	position: absolute;
+	transform: scale(1.5) translate(10%, 10%);
+}
+.Div11:hover {
+	position: absolute;
+	transform: scale(1.5) translate(10%, 10%);
+}
+.image {
+	position: absolute;
+	max-width: 200px;
+	max-height: 200px;
+	box-sizing: border-box;
+	transform-origin: center center;
+	transition: all 3s ease-in-out;
+	z-index: 1;
+	transition: transform .1s ease-out;
+}

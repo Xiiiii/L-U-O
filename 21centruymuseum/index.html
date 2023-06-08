@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+      <title>21 Century Museum</title>
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+        font-size: 12pt;
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-family: "My Custom Font";
+    }
+    body {
+        background-color: rgb(0, 0, 0);
+        width:100%;
+        height: 100%;
+        font-size: 18pt ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    article{font-size: 18pt}
+    h3 {
+        font-size: 70px;
+        color: rgb(255, 255, 255);
+        font-family: "My Custom Font";
+        width: 55%;
+    }
+    h4 {
+        font-size: 48px;
+        color: rgb(255, 255, 255);
+        font-family: "My Custom Font";
+        width: 10%;
+    }
+    @font-face {
+        font-family: 'My Custom Font';
+        src: url('../Digitany.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;}
+    p {  
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        width: 60%;
+        font-family: "My Custom Font 2";
+      }
+      @font-face {
+        font-family: 'My Custom Font 2';
+        src: url('../Baskerville.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+        .fixed-content {
+        width: 100%;
+          position: fixed;
+          background-color: #000;
+          padding: 10px;
+          z-index: 99999; 
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        h3:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}h4:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}p:hover{
+            background-color: rgb(255, 255, 255);
+        color: #000;}
+        .fixed-image {
+          position: fixed;
+          left: 50%;
+   	 top: 50%;
+   	 transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        video{
+            max-width: 100%;
+        }
+        .oneline_video{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .oneline_img{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .oneline_img2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .bottom_menu{
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .bac_IMG{
+            /* width: 100%; */
+            height: 100%;
+            background-color: #fff;
+        }
+        .show_hide{
+            display: none;
+        }
+      </style>
+      </head>
+    <body>
+        <div class="fixed-content">
+            <a href="../index.html" id="back">HOME</a>
+            <a style="margin-right: 20px;" href="../index.html" id="back">LUO </a>
+ </div>
+        <br>
+       <div style="width: 100%;height: 100%;"></div>
+
+        <img id="bacImgshow" class="bac_IMG fixed-image" src="DSCF5649.JPG">
+        <br>
+            <h3 id="title_text" style="margin-left: 20px;">21 Century Museum </h3><br>
+            <h4 style="margin-left: 20px;">2023</h4><br>
+            <p style="margin-left: 20px;">
+                Branding,Modeling,Video,Website,Space<br><br>
+                In today's society, people's dependence on artificial intelligence has reached an extreme level. We can see that AI has penetrated into all aspects of our lives, from smart homes to autonomous driving, from voice recognition to face recognition, everywhere.
+                However, this dependency also poses some problems. We start to lose our ability to think for ourselves, and the opinion of AI becomes our only choice. This situation makes us wonder, what would it look like if AI really replaced our thinking?
+                Based on this question, the author hopes to explore this topic by establishing a 21st century museum. The museum will display objects from the 21st century to let future generations know about the era of the rise of AI.
+             </p>
+            <br>
+            <br> <br>
+            <iframe src="//player.bilibili.com/player.html?aid=657105375&bvid=BV1Eh4y1R7Sn&cid=1156843784&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> <br> <br>
+            <div class="oneline_video">
+                <video src="5月1日.mp4" style="height: 500px;background-color: #fff;width: 50%;margin-left: 20px;"controls="controls" alt="walk"loop muted autoplay playsinline></video>
+                <!-- <img style="height: 500px;background-color: #fff;margin-right: 20px;" src="海报_画板 1 副本 2_副本.jpg"/> -->
+                 </div>
+            <br> <br>
+            <div class="oneline_img">
+          <img  style="height: 600px;background-color: #fff;margin-left: 20px;" src="DSCF5644.JPG"/>
+          <img  style="height: 600px;background-color: #fff;margin-right: 20px;" src="DSCF5637.JPG">
+        </div>
+    
+        <br>
+        <div class="bottom_menu">
+             <a href="https://readymag.com/u1455324096/4220601/">VISIT WEBSITE</a>
+            <a href="../chengjiao/index.html" id="back">NEXT</a>
+        </div>
+  
+  </body>
+  <script>
+    (function(){
+        let bacimg = document.getElementById('bacImgshow')
+        let title_text = document.getElementById('title_text')
+        console.log(title_text.style);
+        // document.addEventListener("scroll",(e)=>{
+        //    let _ = document.documentElement.scrollTop
+        //    console.log(_);
+        //    if(_>40){
+        //     bacimg.classList.remove('show_hide')
+        //    }
+        //    if(_<40){
+        //     bacimg.classList.add('show_hide')
+        //    }
+        // })
+    })()
+  </script>
+ 
+</html>
