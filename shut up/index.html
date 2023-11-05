@@ -137,26 +137,83 @@ margin-left: 20px
             <a href="../index.html" id="   ">   </a>
             <a href="../suanming/index.html" id="back">NEXT</a>
         </div>
+    </body>
+    <script>
+      (function(){
+          let bacimg = document.getElementById('bacImgshow')
+          let title_text = document.getElementById('title_text')
+          console.log(title_text.style);
+          // document.addEventListener("scroll",(e)=>{
+          //    let _ = document.documentElement.scrollTop
+          //    console.log(_);
+          //    if(_>40){
+          //     bacimg.classList.remove('show_hide')
+          //    }
+          //    if(_<40){
+          //     bacimg.classList.add('show_hide')
+          //    }
+          // })
+          moveCss()
+          // 监听页面大小变化
+          window.addEventListener('resize', function() {
+              moveCss()
+          });
+          // 监听页面滚动
+          window.addEventListener("scroll", () => {
+              // 获取当前滚动位置
+              const scrollY = window.scrollY;
+              console.log(scrollY, 'scrollY--')
+              if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                  var element = document.getElementsByClassName('content'); 
+                  // 获取元素距离页面顶部的距离
+                  var distanceFromTop = element[0].offsetTop;
+                  console.log('元素距离顶部的距离：' + distanceFromTop + ' 像素');
+                  if(scrollY>distanceFromTop/3) {
+                      element[0].style.backgroundColor = '#fff';
+                      element[0].style.color = '#333';
+                  } else {
+                      element[0].style.backgroundColor = 'transparent';
+                      element[0].style.color = '#fff';
+                  }
   
-  </body>
-  <script>
-    (function(){
-        let bacimg = document.getElementById('bacImgshow')
-        let title_text = document.getElementById('title_text')
-        console.log(title_text.style);
-        // document.addEventListener("scroll",(e)=>{
-        //    let _ = document.documentElement.scrollTop
-        //    console.log(_);
-        //    if(_>40){
-        //     bacimg.classList.remove('show_hide')
-        //    }
-        //    if(_<40){
-        //     bacimg.classList.add('show_hide')
-        //    }
-        // })
-    })()
-
-
-  </script>
+                  if(scrollY>(distanceFromTop/3 + 100)) {
+                      element[1].style.backgroundColor = '#fff';
+                      element[1].style.color = '#333';
+                  } else {
+                      element[1].style.backgroundColor = 'transparent';
+                      element[1].style.color = '#fff';
+                  }
+  
+                  if(scrollY>(distanceFromTop/3 + 200)) {
+                      element[2].style.backgroundColor = '#fff';
+                      element[2].style.color = '#333';
+                  } else {
+                      element[2].style.backgroundColor = 'transparent';
+                      element[2].style.color = '#fff';
+                  }
+              }
+          })
+      })()
+      function moveCss() {
+          // 获取所有元素
+          var allBack = document.querySelectorAll('#back');
+          
+          var content = document.getElementsByClassName('content')[0];
+          console.log(content);
+          if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+              console.log("网页在移动端下");
+              for (var i = 0; i < allBack.length; i++) {
+                  allBack[i].style.fontSize = '60px';
+              }
+              content.style.fontSize = '60px';
+          } else {
+              for (var i = 0; i < allBack.length; i++) {
+                  allBack[i].style.fontSize = '24px';
+              }
+              content.style.fontSize = '24px';
+          }
+      }
+    </script>
+   
  
 </html>
